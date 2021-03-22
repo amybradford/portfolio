@@ -1,0 +1,17 @@
+@import 'partials/setup';
+@import 'partials/fonts';
+@import 'partials/colours';
+@import 'partials/header';
+@import 'partials/about';
+@import 'partials/skills';
+@import 'partials/footer';
+
+.wrapper {  
+  width: 80%;
+  margin: 0 auto;
+  max-width:1200px;
+}
+
+main {
+  background: $offWhite;
+}
