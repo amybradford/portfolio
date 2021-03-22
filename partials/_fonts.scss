@@ -1,0 +1,19 @@
+// font styles
+$headerFont: 'Unica One', cursive;
+// font sizes
+$h1Size: 6rem;
+$h2Size: 2rem;
+$footerSize: 1.2rem;
+
+h1 {
+  font-size: $h1Size;
+}
+
+h2 {
+  font-size: $h2Size;
+}
+
+h1, h2 {
+  font-family: $headerFont;
+  opacity: 0.8;
+}
