@@ -9,3 +9,15 @@
   opacity: 0.8;
   border-radius: 5px;
 }
+
+.iconContainer1,
+.iconContainer2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  .icon {
+    opacity: 0.8;
+    padding-top: 5%;
+  }
+}

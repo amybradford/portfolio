@@ -226,7 +226,8 @@ html {
   overflow: hidden;
 }
 
-h1 {
+h1,
+i {
   font-size: 6rem;
 }
 
@@ -335,6 +336,25 @@ header h1 {
   border-radius: 5px;
 }
 
+.iconContainer1,
+.iconContainer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.iconContainer1 .icon,
+.iconContainer2 .icon {
+  opacity: 0.8;
+  padding-top: 5%;
+}
+
 .projects .highlight {
   position: absolute;
   background: #CAAEA2;
@@ -344,6 +364,10 @@ header h1 {
   left: -4px;
   opacity: 0.8;
   border-radius: 5px;
+}
+
+.projects h2 {
+  margin-top: 5%;
 }
 
 .contact .highlight {
@@ -387,8 +411,8 @@ h2 {
   height: 50vh;
 }
 
-.skills,
-.contact {
+.skills h2,
+.contact h2 {
   text-align: right;
 }
 /*# sourceMappingURL=styles.css.map */
