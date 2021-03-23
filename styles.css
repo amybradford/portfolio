@@ -239,14 +239,11 @@ h1, h2 {
   opacity: 0.8;
 }
 
-body {
-  background: #C5E3BF;
-}
-
 header {
   height: 100vh;
-  background-image: url(assets/flowers.png);
+  background-image: url(assets/rainbow.jpg);
   background-size: cover;
+  background-position: center center;
   overflow: hidden;
   margin: -10px -10px -30px -10px;
   display: -webkit-box;
@@ -281,10 +278,15 @@ header h2 {
   height: 40vh;
 }
 
+h2 {
+  margin: 0;
+}
+
 footer {
+  background: #FBE0CD;
   font-size: 1.2rem;
   text-align: center;
-  margin-bottom: 2%;
+  padding: 10px 0;
 }
 
 .wrapper {

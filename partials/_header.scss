@@ -1,11 +1,8 @@
-body {
-  background: $palegreen;
-}
-
 header {
   height: 100vh; 
-  background-image: url(assets/flowers.png);
+  background-image: url(assets/rainbow.jpg);
   background-size: cover;
+  background-position: center center;
   overflow: hidden;
   margin: -10px -10px -30px -10px;
   display: flex;
