@@ -1,7 +1,33 @@
-.about {
-  height: 40vh;
-  h2 {
-    padding-top: 20px;
+.about .highlight {
+  position: absolute;
+  background: $green;
+  width: 137px;
+  height: 24px;
+  top: 38px;
+  left: -4px;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.aboutContainer {
+  display: flex;
+  p {
+    width: 75%;
+    padding-right: 15%;
+  } 
+  .avatarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  } 
+}
+
+.avatarContainer {
+  width: 25%;
+  .avatar {
+    height: auto;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 30%;
   }
-  
 }

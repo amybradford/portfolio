@@ -4,6 +4,7 @@
 @import 'partials/header';
 @import 'partials/about';
 @import 'partials/skills';
+@import 'partials/projects';
 @import 'partials/contact';
 @import 'partials/footer';
 
@@ -11,8 +12,28 @@
   width: 80%;
   margin: 0 auto;
   max-width:1200px;
+  position: relative;
 }
 
 main {
   background: $offWhite;
 }
+
+h2 {
+  padding-top: 20px;
+  margin: 0;
+}
+
+.about, 
+.skills,
+.projects,
+.contact {
+  height: 50vh;
+}
+
+.skills, 
+.contact {
+  text-align: right;
+}
+
+

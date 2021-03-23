@@ -1,3 +1,11 @@
-.skills {
-  height: 40vh;
+// highlight styles
+.skills .highlight {
+  position: absolute;
+  background: $orange;
+  width: 90px;
+  height: 24px;
+  top: 38px;
+  right: -4px;
+  opacity: 0.8;
+  border-radius: 5px;
 }

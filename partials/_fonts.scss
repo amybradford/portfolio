@@ -1,9 +1,11 @@
 // font styles
 $headerFont: 'Unica One', cursive;
+$bodyFont: 'Work Sans', sans-serif;
 // font sizes
 $h1Size: 6rem;
 $h2Size: 2rem;
-$footerSize: 1.2rem;
+$bodySize: 1.2rem;
+$footerSize: 1rem;
 
 h1 {
   font-size: $h1Size;
@@ -16,4 +18,18 @@ h2 {
 h1, h2 {
   font-family: $headerFont;
   opacity: 0.8;
+}
+
+p,
+footer {
+  font-family: $bodyFont;
+}
+
+p {
+  font-size: $bodySize;
+  line-height: 1.6;
+}
+
+footer {
+  font-size: $footerSize;
 }

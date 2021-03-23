@@ -239,13 +239,27 @@ h1, h2 {
   opacity: 0.8;
 }
 
+p,
+footer {
+  font-family: "Work Sans", sans-serif;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+footer {
+  font-size: 1rem;
+}
+
 header {
   height: 100vh;
   background-image: url(assets/rainbow.jpg);
   background-size: cover;
   background-position: center center;
   overflow: hidden;
-  margin: -10px -10px -30px -10px;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,30 +275,91 @@ header {
           align-items: center;
 }
 
-header h1,
-header h2 {
+header h1 {
   margin: 0;
 }
 
-.about {
-  height: 40vh;
+.about .highlight {
+  position: absolute;
+  background: #67B7B4;
+  width: 137px;
+  height: 24px;
+  top: 38px;
+  left: -4px;
+  opacity: 0.8;
+  border-radius: 5px;
 }
 
-.about h2 {
-  padding-top: 20px;
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.skills {
-  height: 40vh;
+.aboutContainer p {
+  width: 75%;
+  padding-right: 15%;
 }
 
-h2 {
-  margin: 0;
+.aboutContainer .avatarContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.avatarContainer {
+  width: 25%;
+}
+
+.avatarContainer .avatar {
+  height: auto;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 30%;
+}
+
+.skills .highlight {
+  position: absolute;
+  background: #FAB089;
+  width: 90px;
+  height: 24px;
+  top: 38px;
+  right: -4px;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.projects .highlight {
+  position: absolute;
+  background: #CAAEA2;
+  width: 128px;
+  height: 24px;
+  top: 38px;
+  left: -4px;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+.contact .highlight {
+  position: absolute;
+  background: #EFB470;
+  width: 115px;
+  height: 24px;
+  top: 38px;
+  right: -4px;
+  opacity: 0.8;
+  border-radius: 5px;
 }
 
 footer {
   background: #FBE0CD;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
   padding: 10px 0;
 }
@@ -293,9 +368,27 @@ footer {
   width: 80%;
   margin: 0 auto;
   max-width: 1200px;
+  position: relative;
 }
 
 main {
   background: #f8f8ff;
+}
+
+h2 {
+  padding-top: 20px;
+  margin: 0;
+}
+
+.about,
+.skills,
+.projects,
+.contact {
+  height: 50vh;
+}
+
+.skills,
+.contact {
+  text-align: right;
 }
 /*# sourceMappingURL=styles.css.map */
