@@ -1,3 +1,13 @@
+.projects {
+  height: 100vh;
+  h2 {
+    margin-top: 5%;
+  }
+  p {
+    margin: 1% 0 0 0;
+  }
+}
+
 .projects .highlight {
   position: absolute;
   background: $lightBrown;
@@ -9,6 +19,23 @@
   border-radius: 5px;
 }
 
-.projects h2 {
+.projectContainer
+img {
   margin-top: 5%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
 }
+
+.carousel-cell {
+  width: 100%; /* full width */
+  margin-right: 10px;
+}
+
+.flickity-enabled:focus .flickity-viewport {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+
+

@@ -4,7 +4,8 @@ $bodyFont: 'Work Sans', sans-serif;
 // font sizes
 $h1Size: 6rem;
 $h2Size: 2rem;
-$bodySize: 1.2rem;
+$h3Size: 1.4rem;
+$bodySize: 1rem;
 $footerSize: 1rem;
 
 h1,
@@ -16,7 +17,11 @@ h2 {
   font-size: $h2Size;
 }
 
-h1, h2 {
+h3 {
+  font-size: $h3Size;
+}
+
+h1, h2, h3 {
   font-family: $headerFont;
   opacity: 0.8;
 }

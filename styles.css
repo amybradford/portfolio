@@ -235,7 +235,11 @@ h2 {
   font-size: 2rem;
 }
 
-h1, h2 {
+h3 {
+  font-size: 1.4rem;
+}
+
+h1, h2, h3 {
   font-family: "Unica One", cursive;
   opacity: 0.8;
 }
@@ -246,7 +250,7 @@ footer {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -355,6 +359,18 @@ header h1 {
   padding-top: 5%;
 }
 
+.projects {
+  height: 100vh;
+}
+
+.projects h2 {
+  margin-top: 5%;
+}
+
+.projects p {
+  margin: 1% 0 0 0;
+}
+
 .projects .highlight {
   position: absolute;
   background: #CAAEA2;
@@ -366,8 +382,24 @@ header h1 {
   border-radius: 5px;
 }
 
-.projects h2 {
+.projectContainer
+img {
   margin-top: 5%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+}
+
+.carousel-cell {
+  width: 100%;
+  /* full width */
+  margin-right: 10px;
+}
+
+.flickity-enabled:focus .flickity-viewport {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .contact .highlight {
@@ -406,7 +438,6 @@ h2 {
 
 .about,
 .skills,
-.projects,
 .contact {
   height: 50vh;
 }
