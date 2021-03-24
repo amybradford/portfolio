@@ -1,4 +1,8 @@
 // highlight styles
+.skills h2 {
+  margin-top: -65px;
+  }
+
 .skills .highlight {
   position: absolute;
   background: $orange;
@@ -15,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 30px;
   .icon {
     opacity: 0.8;
     padding-top: 5%;
