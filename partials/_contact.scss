@@ -12,3 +12,28 @@
 .contact h2 {
   margin-top: -120px;
 }
+
+.contactInfoContainer {
+  display: flex;
+  p {
+    width: 40%;
+    margin-right: 100px;
+  }
+}
+
+form {
+  width:200px;
+  padding:20px;
+  input[type=text],
+  input[type=email],
+  textarea {
+    border: 2px solid $orange;
+    padding: 10px;
+    margin:10px 0;
+    border-radius: 10px;
+  }
+  textarea {
+    width: 100%;
+  }
+}
+
