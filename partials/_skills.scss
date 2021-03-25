@@ -1,6 +1,6 @@
 // highlight styles
 .skills h2 {
-  margin-top: -65px;
+  margin-top: -45px;
   }
 
 .skills .highlight {
@@ -19,9 +19,18 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 75px;
+  text-align: center;
   .icon {
     opacity: 0.8;
     padding-top: 5%;
   }
+  p {
+    visibility: hidden;
+  }
+}
+
+// hover styles
+.icon:hover + .hideText {
+  visibility: visible;
 }

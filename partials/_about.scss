@@ -15,10 +15,15 @@
 
 .aboutContainer {
   display: flex;
+  margin-top: 25px;
   p {
     width: 75%;
     padding-right: 15%;
-  } 
+    span {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+  }
   .avatarContainer {
   display: flex;
   justify-content: center;

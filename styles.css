@@ -304,11 +304,17 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 25px;
 }
 
 .aboutContainer p {
   width: 75%;
   padding-right: 15%;
+}
+
+.aboutContainer p span {
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .aboutContainer .avatarContainer {
@@ -335,7 +341,7 @@ header h1 {
 }
 
 .skills h2 {
-  margin-top: -65px;
+  margin-top: -45px;
 }
 
 .skills .highlight {
@@ -359,13 +365,23 @@ header h1 {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 75px;
+  text-align: center;
 }
 
 .iconContainer1 .icon,
 .iconContainer2 .icon {
   opacity: 0.8;
   padding-top: 5%;
+}
+
+.iconContainer1 p,
+.iconContainer2 p {
+  visibility: hidden;
+}
+
+.icon:hover + .hideText {
+  visibility: visible;
 }
 
 .projects {
@@ -439,7 +455,7 @@ header h1 {
 
 .contact .highlight {
   position: absolute;
-  background: #EFB470;
+  background: rgba(239, 180, 112, 0.6);
   width: 115px;
   height: 24px;
   top: 38px;
@@ -456,11 +472,13 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contactInfoContainer p {
   width: 40%;
-  margin-right: 100px;
 }
 
 form {
@@ -471,14 +489,39 @@ form {
 form input[type=text],
 form input[type=email],
 form textarea {
-  border: 2px solid rgba(250, 176, 137, 0.6);
+  border: 2px solid rgba(239, 180, 112, 0.6);
   padding: 10px;
   margin: 10px 0;
   border-radius: 10px;
 }
 
 form textarea {
-  width: 100%;
+  height: 150px;
+  width: 500px;
+  resize: none;
+}
+
+form input[type=text],
+form input[type=email] {
+  width: 500px;
+}
+
+form .placeholder {
+  font-family: "Work Sans", sans-serif;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(239, 180, 112, 0.6);
+  cursor: pointer;
+  width: 75%;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background: #FBE0CD;
 }
 
 footer {

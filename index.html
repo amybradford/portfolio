@@ -26,10 +26,17 @@
       <div class= "highlight"></div>
       <h2>About me</h2>
       <div class="aboutContainer">
-        <p>Hi, I'm Amy, welcome to my site! I'm a front-end web developer who loves building creative, accessible and responsive apps and websites!
-
-          Before becoming a web-developer, I was a Veterinary Technician for many years Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas possimus tenetur totam impedit? Quo nisi hic ab, incidunt voluptatibus reprehenderit rem! Dolor, temporibus eaque? Magnam libero perspiciatis velit cum debitis!
-        </p>
+        <p>Hi, I'm Amy, welcome to my site! I'm a Toronto based front-end web developer who loves building creative, accessible and responsive apps! At the minute most of my time outside of coding is spent crocheting, playing games and dreaming of owning a dog.
+        <br>
+        <br>
+        Speaking of dogs, before becoming a web-developer, I was an ER Veterinary Technician for many years ~ sometimes I wonder if I've met some of your pets already? 
+        <br>
+        <br>
+        My portfolio is a work in progress and I can't wait to keep adding to it as my skillset grows. Below you'll find some of my most recent projects. Please feel free to reach out if you'd like to know more!
+        <br>
+        <br>
+          <span>Currently available for full-time work and freelance opportunities!</span>
+        </p>        
         <div class="avatarContainer">
           <img class= "avatar" src="./assets/avatar.jpg" alt="illustration of me on mustard background with leaves and mushroom garland">
         </div>
@@ -40,18 +47,48 @@
       <div class= "highlight"></div>
       <h2>Skills</h2>
       <div class= "iconContainer1">
-        <i class="icon devicon-html5-plain"></i>
-        <i class="icon devicon-css3-plain"></i>
-        <i class="icon devicon-sass-original"></i>
-        <i class="icon devicon-javascript-plain"></i>
-        <i class="icon devicon-jquery-plain"></i>
+        <div class= "iconAndText">
+          <i class="icon devicon-html5-plain"></i>
+          <p class= "hideText">HTML 5</p>
+        </div>
+        <div class= "iconAndText">
+          <i class="icon devicon-css3-plain"></i>
+          <p class= "hideText">CSS 3</p>
+        </div>
+        <div class= "iconAndText">
+          <i class="icon devicon-sass-original"></i>
+          <p class= "hideText">Sass</p>
+        </div>
+        <div class= "iconAndText">      
+          <i class="icon devicon-javascript-plain"></i>
+          <p class= "hideText">JavaScript</p>
+        </div>
+        <div class= "iconAndText">
+          <i class="icon devicon-jquery-plain"></i>
+          <p class= "hideText">jQuery</p>
+        </div> 
       </div>
       <div class= "iconContainer2">
-        <i class="icon devicon-react-original"></i>
-        <i class="icon devicon-firebase-plain"></i>
-        <i class="icon devicon-github-original"></i>
-        <i class="icon fas fa-laptop-code"></i> 
-        <i class="icon fas fa-universal-access"></i>
+        <div class= "iconAndText">   
+          <i class="icon devicon-react-original"></i>
+          <p class= "hideText">React</p>
+        </div>
+        <div class= "iconAndText"> 
+          <i class="icon devicon-firebase-plain"></i>
+          <p class= "hideText">Firebase</p>
+        </div>
+        <div class= "iconAndText"> 
+          <i class="icon devicon-github-original"></i>
+          <p class= "hideText">GitHub</p>
+        </div>
+        <div class= "iconAndText"> 
+          <i class="icon fas fa-laptop-code"></i>
+          <p class= "hideText">Responsive Design</p> 
+        </div>
+        <div class= "iconAndText"> 
+          <i class="icon fas fa-universal-access"></i>
+          <p class= "hideText">Accessibility</p>
+        </div>
       </div>     
     </section>
 
@@ -70,7 +107,7 @@
             <li>Firebase</li>
             <li>HTML5</li>
             <li>CSS3</li>
-            <li class= "button"><a href="https://github.com/amybradford/plants-app">Github</a></li>
+            <li class= "button"><a href="https://github.com/amybradford/plants-app">GitHub</a></li>
             <li class= "button"><a href="https://plantsprout.netlify.app/">Live Site</a></li>
           </ul>
           </div>
@@ -86,7 +123,7 @@
             <li>HTML5</li>
             <li>CSS3</li>
             <li>Pair Programming</li>
-            <li class= "button"><a href="https://github.com/harman-amy/weather-app">Github</a></li>
+            <li class= "button"><a href="https://github.com/harman-amy/weather-app">GitHub</a></li>
             <li class= "button"><a href="https://harman-amy.github.io/weather-app/">Live Site</a></li>
           </ul>
         </div> 
@@ -101,7 +138,7 @@
               <li>Sass</li>
               <li>HTML5</li>
               <li>Group Collab</li>
-              <li class= "button"><a href="https://github.com/BeAnGlAm/WriteOn">Github</a></li>
+              <li class= "button"><a href="https://github.com/BeAnGlAm/WriteOn">GitHub</a></li>
               <li class= "button"><a href="write-on.netlify.app/">Live Site</a></li>
             </ul>
         </div> 
@@ -111,16 +148,16 @@
     <section class="contact wrapper">
       <div class= "highlight"></div>
       <h2>Contact</h2>
-      <div class= "contactInfoContainer">
-        <p>I am currently open for freelance work and commissions! You can email me or leave a message and I'll get back to you as soon as possible!</p>
+      <div class= "contactInfoContainer">      
         <div class= "formContainer">
           <form name="contact" method="POST" data-netlify="true">
-            <label>Name: <input type="text" name="name" /></label>   
-            <label>Email: <input type="email" name="email" /></label>        
-            <label>Message: <textarea name="message"></textarea></label>       
+            <label><input type="text" name="name" placeholder="Name"/></label>   
+            <label><input type="email" name="email" placeholder="Email"/></label>        
+            <label><textarea name="message" placeholder="Write a message here"></textarea></label>       
             <button type="submit">Send</button>        
           </form>
         </div> 
+        <p>If you'd like to get in touch with me please submit a message or contact me via email and I'll get back to you as soon as possible!</p>    
       </div> 
  
     </section>
