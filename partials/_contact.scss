@@ -4,7 +4,7 @@
   width: 115px;
   height: 24px;
   top: 38px;
-  right: -4px;
+  left: -4px;
   opacity: 0.8;
   border-radius: 5px;
 }
@@ -16,9 +16,26 @@
 .contactInfoContainer {
   display: flex;
   justify-content: space-between;
-  p {
+  .contactMeContainer {
     width: 40%;
-  }
+    i {
+      padding-left: 20%;
+      padding-right: 10%;
+      opacity: 0.8;
+    }
+    p {
+      margin-top: 60px;
+    }
+    span {
+      font-weight: 600;
+    }
+    a {
+      color: black;
+    }
+    a:hover {
+      color: $mustard;
+    }
+  }  
 }
 
 form {
@@ -27,10 +44,12 @@ form {
   input[type=text],
   input[type=email],
   textarea {
-    border: 2px solid $mustard;
     padding: 10px;
     margin:10px 0;
     border-radius: 10px; 
+    background: $mustard;
+    border: none;
+  opacity: 0.7;
   }
   textarea {
     height: 150px;
@@ -49,6 +68,7 @@ form {
     border: none;
     border-radius: 10px;
     background: $mustard;
+    opacity: 0.7;
     cursor: pointer;
     width: 75%;
     margin-top: 10px;    

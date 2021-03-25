@@ -31,9 +31,180 @@ h2 {
   height: 50vh;
 }
 
-.skills h2, 
-.contact h2 {
-  text-align: right;
+// scrollbar CSS - hide scroll but keep functionality
+// Chrome, Safari and Opera //
+html::-webkit-scrollbar {
+  display: none;
 }
+// IE, Edge and Firefox //
+html {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+} 
+
+@media screen and (max-width: 1450px) {
+  .about {
+  height: 60vh;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .skills {
+    margin-top: 5%;
+  }
+  .iconContainer2 {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .about {
+    height: 50vh;
+    img {
+      height: 250px;
+      width: 250px;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  .skills {
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 830px) {
+  .aboutContainer p > span {
+    font-size: $bodySize;
+  };
+  .skills {
+    margin-top: 12%;
+  }
+  .icon {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  header {
+    height: 85vh;
+  }
+  .about img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 2%;
+    margin-left: 2%;
+  }
+  .skills {
+    margin-top: 17%;
+  }
+  .projectInfoContainer {
+    p {
+    font-size: 0.9rem;
+    }
+    li {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .skills h2 {
+    margin: 0;
+  }
+  .icon {
+    font-size: 4rem;
+  }
+  .hideText {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 70vh;
+  }
+  .about {
+    height: 60vh;
+    img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    }
+  }
+  .skills {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .about {
+    height: 70vh;
+  }
+  .iconContainer1, 
+  .iconContainer2 {
+  .icon {
+    font-size: 3rem;    
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    height: 60vh;
+    h1 {
+    font-size: 2.5rem;
+    }
+  }
+  .about {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    height: 50vh;
+  }
+  .about {
+    height: 80vh;
+  }
+  .skills {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  header h2 {
+    font-size: 1.5rem;
+  }
+  .about {
+    height: 70vh;
+    p {
+    font-size: 0.8rem;
+    } 
+  }
+  .iconContainer1,
+  .iconContainer2 {
+  .icon {
+    font-size: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about {
+    height: 80vh;
+  }
+}
+
 
 

@@ -10,25 +10,24 @@
 }
 
 .about h2 {
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .aboutContainer {
-  display: flex;
+  // display: flex;
   margin-top: 25px;
-  p {
-    width: 75%;
-    padding-right: 15%;
-    span {
-      font-weight: 700;
-      font-size: 1.2rem;
-    }
+  img {
+    float: right;
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    margin-bottom: 5%;
+    margin-left: 5%;
   }
-  .avatarContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  } 
+  span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    }
 }
 
 .avatarContainer {
@@ -40,3 +39,4 @@
     border-radius: 30%;
   }
 }
+
