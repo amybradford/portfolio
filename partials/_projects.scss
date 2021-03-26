@@ -23,6 +23,9 @@
         text-decoration: none;
         color: black;
       }
+    }
+    .button {
+      border: 2px dashed $green;
     } 
   }
 }
@@ -62,6 +65,11 @@
 // hover styles
 .flickity-button:hover {
   color: $lightBrown;
+}
+
+.skillsContainer .button:hover {
+  background: $green;
+  opacity: 0.6;
 }
 
 
