@@ -28,7 +28,7 @@ h2 {
 .about, 
 .skills,
 .contact {
-  height: 50vh;
+  height: 60vh;
 }
 
 // scrollbar CSS - hide scroll but keep functionality
@@ -51,9 +51,13 @@ html {
 @media screen and (max-width: 1120px) {
   .skills {
     margin-top: 5%;
+    height: 55vh;
   }
   .iconContainer2 {
     margin-top: 25px;
+  }
+  .contactMeContainer {
+    padding-left: 60px;
   }
 }
 
@@ -71,7 +75,18 @@ html {
   .skills {
     margin-top: 10%;
   }
+  .contactInfoContainer .contactMeContainer  i {
+    padding: 0;
+  }
+  form {
+    input[type=text],
+    input[type=email],
+    textarea {
+      width: 400px;
+    }
+  }
 }
+
 @media screen and (max-width: 830px) {
   .aboutContainer p > span {
     font-size: $bodySize;
@@ -85,10 +100,10 @@ html {
 }
 
 @media screen and (max-width: 780px) {
-  header {
-    height: 85vh;
+  .wrapper {
+    width: 90%;
   }
-  .about img {
+   .about img {
     height: 200px;
     width: 200px;
     margin-bottom: 2%;
@@ -105,29 +120,30 @@ html {
       font-size: 0.9rem;
     }
   }
+  .contactMeContainer {
+    padding: 0;
+    p {
+      font-size: 0.9rem;
+    }
+    i {
+      font-size: 2rem;
+    }
+  }
+  form {
+    input[type=text],
+    input[type=email],
+    textarea {
+      width: 300px;
+    }
+  }
 }
 
 @media screen and (max-width: 675px) {
   h1 {
     font-size: 5rem;
   }
-  .skills h2 {
-    margin: 0;
-  }
-  .icon {
-    font-size: 4rem;
-  }
-  .hideText {
-    font-size: 0.7rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  header {
-    height: 70vh;
-  }
   .about {
-    height: 60vh;
+    height: 50vh;
     img {
     height: 150px;
     width: 150px;
@@ -136,16 +152,67 @@ html {
     }
   }
   .skills {
-    margin-top: 0;
+    height: 45vh; 
+    } 
+    h2 {
+    margin: 0;
   }
-}
-
-@media screen and (max-width: 535px) {
-  h1 {
+  .icon {
     font-size: 4rem;
   }
+  .hideText {
+    font-size: 0.7rem;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
   .about {
     height: 70vh;
+  }
+  .skills {
+    margin-top: 0;
+  }
+  .skillsContainer {
+    flex-wrap: wrap;
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  .projects {
+    height: 80vh;
+    p {
+    font-size: 0.8rem;
+    }
+  }
+  .flickity-prev-next-button {
+    display: none;
+  }
+  .projectInfoContainer {
+    margin-top: -100px;
+  }
+  .contactInfoContainer {
+    flex-direction: column-reverse;
+    .contactMeContainer {
+    width: 100%;
+    }
+  }
+  form {
+    input[type=text],
+    input[type=email],
+    textarea {
+      width: 500px;
+    }
+  }
+  footer {
+    margin-top: 20%;
+  }
+  
+}
+
+@media screen and (max-width: 545px) {
+  h1 {
+    font-size: 4rem;
   }
   .iconContainer1, 
   .iconContainer2 {
@@ -153,11 +220,30 @@ html {
     font-size: 3rem;    
     }
   }
+  .imageContainer img {
+    height: 30vh;
+  }
+  .projectInfoContainer {
+    margin-top: 0;
+    p {
+    padding-top: 0;
+    }
+  }
+  .skills {
+    height: 40vh;
+  }
+  form {
+    input[type=text],
+    input[type=email],
+    textarea {
+      width: 400px;
+    }
+  } 
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 475px) {
   header {
-    height: 60vh;
+    height: 100vh;
     h1 {
     font-size: 2.5rem;
     }
@@ -165,17 +251,44 @@ html {
   .about {
     height: 80vh;
   }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .imageContainer img {
+    height: 30vh;
+    margin-top: 10%;
+  }
+  .projects {
+    height: 80vh;
+  }
+  .projectInfoContainer p {
+    margin-top: 5%;
+  }
+  form {
+    input[type=text],
+    input[type=email],
+    textarea {
+      width: 300px;
+    }
+  } 
+  
 }
 
 @media screen and (max-width: 400px) {
   header {
-    height: 50vh;
+    height: 100vh;
   }
   .about {
     height: 80vh;
+    p {
+    font-size: 0.8rem;
+    } 
   }
   .skills {
-    height: 40vh;
+    height: 50vh;
   }
 }
 
@@ -188,9 +301,9 @@ html {
   }
   .about {
     height: 70vh;
-    p {
-    font-size: 0.8rem;
-    } 
+  }
+  .skills {
+    height: 35vh;
   }
   .iconContainer1,
   .iconContainer2 {
@@ -204,7 +317,20 @@ html {
   .about {
     height: 80vh;
   }
+  .skills {
+    height: 40vh;
+    h2 {
+    margin-top: 0;
+    }
+  }
+  .iconContainer1 {
+    margin-top: 50px;
+  }
+  .iconContainer1,
+  .iconContainer2 {
+    justify-content: center;
+    .icon {
+      font-size: 3rem;
+    }
+  }
 }
-
-
-
