@@ -8,6 +8,9 @@
 @import 'partials/contact';
 @import 'partials/footer';
 
+html {
+  scroll-behavior: smooth;
+}
 
 .wrapper {  
   width: 80%;
@@ -29,6 +32,16 @@ h2 {
 .skills,
 .contact {
   height: 60vh;
+}
+
+// fade-in animations
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
 }
 
 // scrollbar CSS - hide scroll but keep functionality

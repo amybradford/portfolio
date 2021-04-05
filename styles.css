@@ -202,6 +202,15 @@ template {
   display: none;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -287,6 +296,31 @@ header {
 
 header h1 {
   margin: 0;
+}
+
+header .navBar {
+  background-color: #67B7B4;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0px;
+}
+
+header .navBar ul {
+  margin: 0;
+  padding: 0;
+}
+
+header .navBar ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 20px 20px 20px 0;
+}
+
+header .navBar ul a {
+  padding: 20px 20px 20px 0;
+  text-decoration: none;
+  color: black;
 }
 
 .about .highlight {
@@ -501,8 +535,10 @@ header h1 {
   margin-top: 20px;
 }
 
-.contactInfoContainer .contactMeContainer span {
+.contactInfoContainer .contactMeContainer .contactEmail {
   font-weight: 600;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 .contactInfoContainer .contactMeContainer a {
@@ -566,6 +602,10 @@ footer {
   padding: 10px 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   width: 80%;
   margin: 0 auto;
@@ -586,6 +626,16 @@ h2 {
 .skills,
 .contact {
   height: 60vh;
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 250ms ease-in;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
 }
 
 html::-webkit-scrollbar {

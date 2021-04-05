@@ -12,19 +12,29 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="./flickity/flickity.pkgd.min.js"></script>  
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <link rel="stylesheet" href="./flickity/flickity.min.css" media="screen">   
+  <link rel="stylesheet" href="./flickity/flickity.min.css" media="screen"> 
   <link rel="stylesheet" href="styles.css">
 </head>
 <!-- body HTML -->
 <body>  
-  <header>
+  <header id="home">
+    <div class="navBar">
+      <nav class="wrapper">
+        <ul class= "clearfix">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutJumpTo">About</a></li>
+          <li><a href="#projectsJumpTo">Projects</a></li>
+          <li><a href="#contactJumpTo">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <h1>Amy Bradford</h1>
     <h2>front-end web developer</h2>
   </header>
   <main>
-    <section class="about wrapper">
+    <section class="about wrapper fade-in">
       <div class= "highlight"></div>
-      <h2>About me</h2>
+      <h2 id= "aboutJumpTo">About me</h2>
       <div class="aboutContainer">
         <img class= "avatar" src="./assets/leaf.png" alt="abstract leaf doodle">
         <p>Hi, I'm Amy, welcome to my site! I'm a Toronto based front-end web developer who loves building creative, accessible and responsive apps! At the minute most of my time outside of coding is spent crocheting, playing games and dreaming of owning a dog.
@@ -37,14 +47,11 @@
         <br>
         <br>
           <span>Currently available for full-time work and freelance opportunities!</span>
-        </p>        
-        <!-- <div class="avatarContainer"> -->
-          
-        <!-- </div> -->
+        </p>       
       </div>     
     </section>
 
-    <section class="skills wrapper">
+    <section class="skills wrapper fade-in">
       <div class= "highlight"></div>
       <h2>Skills</h2>
       <div class= "iconContainer1">
@@ -95,7 +102,7 @@
 
     <section class="projects wrapper">
       <div class= "highlight"></div>
-      <h2>Projects</h2>
+      <h2 id= "projectsJumpTo">Projects</h2>
       <div class= "projectContainer main-carousel">
         <div class="projectOne carousel-cell">
           <div class= "imageContainer">
@@ -153,9 +160,9 @@
       </div>      
     </section>
 
-    <section class="contact wrapper">
+    <section class="contact wrapper fade-in">
       <div class= "highlight"></div>
-      <h2>Contact</h2>
+      <h2 id= "contactJumpTo">Contact</h2>
       <div class= "contactInfoContainer">      
         <div class= "formContainer">
           <form name="contact" method="POST" data-netlify="true">
@@ -166,15 +173,15 @@
           </form>
         </div> 
         <div class= "contactMeContainer">
-          <p>You can contact me at <span>amy.bradford3@gmail.com</span> or feel free to use the form provided and I'll get back to you as soon as possible!</p>
+          <p>You can contact me at <a class= "contactEmail" href= "mailto:{email}?subject={subject}&body={content}">amy.bradford3@gmail.com</a> or feel free to use the form provided and I'll get back to you as soon as possible!</p>
           <a href="https://github.com/amybradford"><i class="fab fa-github"></i></a> 
           <a href="https://www.linkedin.com/in/amybradford3/"><i class="fab fa-linkedin"></i></a> 
         </div>   
       </div>  
     </section>
-
   </main>  
   <footer>Designed and Developed by Amy Bradford ~ 2021</footer> 
-  <script src="scripts.js"></script> 
+  <!-- linked script file -->
+  <script src="scripts.js"></script>  
 </body>
 </html>
