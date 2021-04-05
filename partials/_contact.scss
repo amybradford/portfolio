@@ -26,8 +26,10 @@
     p {
       margin-top: 20px;
     }
-    span {
+    .contactEmail {
       font-weight: 600;
+      text-decoration: none;
+      opacity: 0.8;
     }
     a {
       color: black;
@@ -49,7 +51,7 @@ form {
     border-radius: 10px; 
     background: $mustard;
     border: none;
-  opacity: 0.7;
+    opacity: 0.7;
   }
   textarea {
     height: 150px;

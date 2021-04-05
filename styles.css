@@ -312,7 +312,7 @@ header .navBar ul {
 }
 
 header .navBar ul li {
-  float: left;
+  display: inline-block;
   list-style: none;
   padding: 20px 20px 20px 0;
 }
@@ -535,8 +535,10 @@ header .navBar ul a {
   margin-top: 20px;
 }
 
-.contactInfoContainer .contactMeContainer span {
+.contactInfoContainer .contactMeContainer .contactEmail {
   font-weight: 600;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 .contactInfoContainer .contactMeContainer a {
@@ -600,6 +602,10 @@ footer {
   padding: 10px 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   width: 80%;
   margin: 0 auto;
@@ -620,6 +626,16 @@ h2 {
 .skills,
 .contact {
   height: 60vh;
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 250ms ease-in;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
 }
 
 html::-webkit-scrollbar {
