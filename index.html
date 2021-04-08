@@ -9,177 +9,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Work+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
   <script src="https://kit.fontawesome.com/4f5b3fcb42.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="./flickity/flickity.pkgd.min.js"></script>  
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <link rel="stylesheet" href="./flickity/flickity.min.css" media="screen"> 
   <link rel="stylesheet" href="styles.css">
 </head>
 <!-- body HTML -->
 <body>  
-  <header id="home">
+  <header class="home">
     <div class="navBar">
       <nav class="wrapper">
         <ul class= "clearfix">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#aboutJumpTo">About</a></li>
-          <li><a href="#projectsJumpTo">Projects</a></li>
-          <li><a href="#contactJumpTo">Contact</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./skills.html">Skills</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
     <h1>Amy Bradford</h1>
     <h2>front-end web developer</h2>
   </header>
-  <main>
-    <section class="about wrapper fade-in">
-      <div class= "highlight"></div>
-      <h2 id= "aboutJumpTo">About me</h2>
-      <div class="aboutContainer">
-        <img class= "avatar" src="./assets/leaf.png" alt="abstract leaf doodle">
-        <p>Hi, I'm Amy, welcome to my site! I'm a Toronto based front-end web developer who loves building creative, accessible and responsive apps! At the minute most of my time outside of coding is spent crocheting, playing games and dreaming of owning a dog.
-        <br>
-        <br>
-        Speaking of dogs, before becoming a web-developer, I was an ER Veterinary Technician for many years ~ sometimes I wonder if I've met some of your pets already? 
-        <br>
-        <br>
-        My portfolio is a work in progress and I can't wait to keep adding to it as my skillset grows. Below you'll find some of my most recent projects. Please feel free to reach out if you'd like to know more!
-        <br>
-        <br>
-          <span>Currently available for full-time work and freelance opportunities!</span>
-        </p>       
-      </div>     
-    </section>
-
-    <section class="skills wrapper fade-in">
-      <div class= "highlight"></div>
-      <h2>Skills</h2>
-      <div class= "iconContainer1">
-        <div class= "iconAndText">
-          <i class="icon devicon-html5-plain" aria-hidden="true"></i>
-          <p class= "hideText">HTML 5</p>
-        </div>
-        <div class= "iconAndText">
-          <i class="icon devicon-css3-plain" aria-hidden="true"></i>
-          <p class= "hideText">CSS 3</p>
-        </div>
-        <div class= "iconAndText">
-          <i class="icon devicon-sass-original" aria-hidden="true"></i>
-          <p class= "hideText">Sass</p>
-        </div>
-        <div class= "iconAndText">      
-          <i class="icon devicon-javascript-plain" aria-hidden="true"></i>
-          <p class= "hideText">JavaScript</p>
-        </div>
-        <div class= "iconAndText">
-          <i class="icon devicon-jquery-plain" aria-hidden="true"></i>
-          <p class= "hideText">jQuery</p>
-        </div> 
-      </div>
-      <div class= "iconContainer2">
-        <div class= "iconAndText">   
-          <i class="icon devicon-react-original" aria-hidden="true"></i>
-          <p class= "hideText">React</p>
-        </div>
-        <div class= "iconAndText"> 
-          <i class="icon devicon-firebase-plain" aria-hidden="true"></i>
-          <p class= "hideText">Firebase</p>
-        </div>
-        <div class= "iconAndText"> 
-          <i class="icon devicon-github-original" aria-hidden="true"></i>
-          <p class= "hideText">GitHub</p>
-        </div>
-        <div class= "iconAndText"> 
-          <i class="icon fas fa-laptop-code" aria-hidden="true"></i>
-          <p class= "hideText">Responsive</p> 
-        </div>
-        <div class= "iconAndText"> 
-          <i class="icon fas fa-universal-access" aria-hidden="true"></i>
-          <p class= "hideText">Accessibility</p>
-        </div>
-      </div>     
-    </section>
-
-    <section class="projects wrapper">
-      <div class= "highlight"></div>
-      <h2 id= "projectsJumpTo">Projects</h2>
-      <div class= "projectContainer main-carousel">
-        <div class="projectOne carousel-cell">
-          <div class= "imageContainer">
-            <img class="desktop" src="./assets/sprout.jpg" alt="screenshot of Sprout app landing page">
-            <img class="mobile" src="./assets/mobilesprout.png" alt="screenshot of Sprout app landing page">
-          </div>
-          <div class= "projectInfoContainer">
-            <p>A plant app created with a Firebase database in React. Users are able to find a randomly generated plant suitable for an indoor apartment depending on if they have pets or not.</p>
-            <ul class= "skillsContainer">
-              <li>React</li>
-              <li>Firebase</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li class= "button"><a href="https://github.com/amybradford/plants-app">GitHub</a></li>
-              <li class= "button"><a href="https://plantsprout.netlify.app/">Live Site</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="projectTwo carousel-cell">
-          <div class= "imageContainer">
-            <img class= "desktop" src="./assets/weather.jpg" alt="screenshot of Weather app landing page">
-            <img class="mobile" src="./assets/mobileweather.png" alt="screenshot of Weather app landing page">
-          </div>
-          <div class= "projectInfoContainer">
-            <p>A weather app that uses the openweathermap API and displays the weather of a city chosen by the user. Background images change with type of weather.</p>
-            <ul class= "skillsContainer">
-             <li>JavaScript</li>
-              <li>API</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Pair Programming</li>
-              <li class= "button"><a href="https://github.com/harman-amy/weather-app">GitHub</a></li>
-              <li class= "button"><a href="https://harman-amy.github.io/weather-app/">Live Site</a></li>
-            </ul>
-          </div>
-        </div> 
-        <div class="projectThree carousel-cell">
-          <div class= "imageContainer">
-            <img class= "desktop "src="./assets/writeon.jpg" alt="screenshot of WriteOn app landing page">
-            <img class="mobile" src="./assets/mobilewriteon.png" alt="screenshot of WriteOn app landing page">
-          </div>
-          <div class= "projectInfoContainer">
-            <p>An app that provides a peacful space for uninterrupted writing determined by a time set by the user. Prompt topics can be provided with an opt-in system. Data is stored in Firebase.</p>
-            <ul class= "skillsContainer">
-              <li>React</li>
-              <li>Firebase</li>
-              <li>Sass</li>
-              <li>HTML5</li>
-              <li>Group Collab</li>
-              <li class= "button"><a href="https://github.com/BeAnGlAm/WriteOn">GitHub</a></li>
-              <li class= "button"><a href="https://write-on.netlify.app/">Live Site</a></li>
-            </ul>
-          </div>
-        </div> 
-      </div>      
-    </section>
-
-    <section class="contact wrapper fade-in">
-      <div class= "highlight"></div>
-      <h2 id= "contactJumpTo">Contact</h2>
-      <div class= "contactInfoContainer">      
-        <div class= "formContainer">
-          <form name="contact" method="POST" data-netlify="true">
-            <label><input type="text" name="name" placeholder="Name"/></label>   
-            <label><input type="email" name="email" placeholder="Email"/></label>        
-            <label><textarea name="message" placeholder="Write a message here"></textarea></label>       
-            <button type="submit">Send</button>        
-          </form>
-        </div> 
-        <div class= "contactMeContainer">
-          <p>You can contact me at <a class= "contactEmail" href= "mailto:{email}?subject={subject}&body={content}">amy.bradford3@gmail.com</a> or feel free to use the form provided and I'll get back to you as soon as possible!</p>
-          <a href="https://github.com/amybradford"><i class="fab fa-github"></i></a> 
-          <a href="https://www.linkedin.com/in/amybradford3/"><i class="fab fa-linkedin"></i></a> 
-        </div>   
-      </div>  
-    </section>
-  </main>  
   <footer>Designed and Developed by Amy Bradford ~ 2021</footer> 
   <!-- linked script file -->
   <script src="scripts.js"></script>  

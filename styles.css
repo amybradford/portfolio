@@ -272,7 +272,7 @@ footer {
   font-size: 1rem;
 }
 
-header {
+.home {
   height: 100vh;
   background-image: url(assets/rainbow.jpg);
   background-size: cover;
@@ -294,11 +294,11 @@ header {
           align-items: center;
 }
 
-header h1 {
+.home h1 {
   margin: 0;
 }
 
-header .navBar {
+.navBar {
   background-color: #67B7B4;
   position: fixed;
   z-index: 1;
@@ -306,21 +306,31 @@ header .navBar {
   top: 0px;
 }
 
-header .navBar ul {
+.navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 0;
 }
 
-header .navBar ul li {
-  display: inline-block;
+.navBar ul li {
   list-style: none;
-  padding: 20px 20px 20px 0;
+  padding: 20px 5%;
 }
 
-header .navBar ul a {
-  padding: 20px 20px 20px 0;
+.navBar ul a {
+  padding: 20px;
   text-decoration: none;
   color: black;
+}
+
+.navBar ul a:hover {
+  color: #f8f8ff;
+  opacity: 0.8;
 }
 
 .about .highlight {
@@ -334,8 +344,8 @@ header .navBar ul a {
   border-radius: 5px;
 }
 
-.about h2 {
-  margin-top: 25px;
+.h2Container {
+  margin-top: 100px;
 }
 
 .aboutContainer {
@@ -378,8 +388,8 @@ header .navBar ul a {
   border-radius: 5px;
 }
 
-.skills h2 {
-  margin-top: -50px;
+.skills .h2Container {
+  margin-top: 100px;
 }
 
 .iconContainer1,
@@ -419,8 +429,8 @@ header .navBar ul a {
   height: 100vh;
 }
 
-.projects h2 {
-  margin-top: 5%;
+.projects .h2Container {
+  margin-top: 100px;
 }
 
 .projects p {
@@ -508,8 +518,8 @@ header .navBar ul a {
   border-radius: 5px;
 }
 
-.contact h2 {
-  margin-top: -70px;
+.h2Container {
+  margin-top: 100px;
 }
 
 .contactInfoContainer {
@@ -596,6 +606,9 @@ form button:hover {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background: #FBE0CD;
   font-size: 1rem;
   text-align: center;

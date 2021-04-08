@@ -1,4 +1,4 @@
-header {
+.home {
   height: 100vh; 
   background-image: url(assets/rainbow.jpg);
   background-size: cover;
@@ -12,26 +12,32 @@ header {
   h1 {
     margin: 0;   
   }
-  .navBar {
+}
+
+.navBar {
     background-color: $green;
     position: fixed;
     z-index: 1;
     width: 100%;
    top: 0px;
     ul {
+      display: flex;
+      justify-content: center;
       margin: 0;
       padding: 0;
       li {
-        display: inline-block;
         list-style: none;
-        padding: 20px 20px 20px 0;
-        
+        padding: 20px 5%;       
       }
       a {
-        padding: 20px 20px 20px 0;
+        padding: 20px;
         text-decoration: none;
         color: black;
         }
+      a:hover {
+        color: $offWhite;
+        opacity: 0.8;
       }
     }
 }
+

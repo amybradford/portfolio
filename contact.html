@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amy Bradford Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
+    <script src="https://kit.fontawesome.com/4f5b3fcb42.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">    
+  </head>
+  <body>
+    <header>
+    <div class="navBar">
+      <nav class="wrapper">
+        <ul class= "clearfix">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./skills.html">Skills</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+    <section class="contact wrapper fade-in">
+      <div class="h2Container">
+        <div class= "highlight"></div>
+        <h2>Contact</h2>
+      </div>
+      <div class= "contactInfoContainer">      
+        <div class= "formContainer">
+          <form name="contact" method="POST" data-netlify="true">
+            <label><input type="text" name="name" placeholder="Name"/></label>   
+            <label><input type="email" name="email" placeholder="Email"/></label>        
+            <label><textarea name="message" placeholder="Write a message here"></textarea></label>       
+            <button type="submit">Send</button>        
+          </form>
+        </div> 
+        <div class= "contactMeContainer">
+          <p>You can contact me at <a class= "contactEmail" href= "mailto:{email}?subject={subject}&body={content}">amy.bradford3@gmail.com</a> or feel free to use the form provided and I'll get back to you as soon as possible!</p>
+          <a href="https://github.com/amybradford"><i class="fab fa-github"></i></a> 
+          <a href="https://www.linkedin.com/in/amybradford3/"><i class="fab fa-linkedin"></i></a> 
+        </div>   
+      </div>  
+    </section> 
+    <footer>Designed and Developed by Amy Bradford ~ 2021</footer> 
+    <script src="scripts.js"></script>  
+  </body>
+</html>
